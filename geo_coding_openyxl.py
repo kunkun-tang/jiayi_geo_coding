@@ -9,7 +9,7 @@ from openpyxl import load_workbook
 gmaps = googlemaps.Client(key='AIzaSyDIm37RAL1x7_IiAAUEYYJh9Yoh5phcdFI')
 
 # change excel file path
-wb2 = load_workbook('/Users/latang/Downloads/1994missed.xlsx')
+wb2 = load_workbook('1994missed.xlsx')
 sht = wb2['Sheet1']
 # specify which column should be placed for latitude
 lat_column = 'M'
