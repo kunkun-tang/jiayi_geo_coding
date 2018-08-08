@@ -1,6 +1,5 @@
 import googlemaps
 import pprint
-import xlwings as xw
 import time
 from openpyxl import Workbook
 from openpyxl import load_workbook
