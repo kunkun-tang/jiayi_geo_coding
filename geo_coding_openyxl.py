@@ -19,7 +19,7 @@ lng_column = 'N'
 sht[lat_column + '1'] = 'lat'
 sht[lng_column + '1'] = 'lng'
 
-rownum = 17
+rownum = 6563
 while (sht['A'+str(rownum)].value != None):
     rownum_str = str(rownum)
 
@@ -41,5 +41,5 @@ while (sht['A'+str(rownum)].value != None):
 
     rownum += 1
 
-
+wb2.save(filename = "1994missed_added.xlsx")
 
