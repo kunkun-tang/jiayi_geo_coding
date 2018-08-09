@@ -5,18 +5,17 @@ from openpyxl import Workbook
 from openpyxl import load_workbook
 
 
-gmaps = googlemaps.Client(key='AIzaSyDIm37RAL1x7_IiAAUEYYJh9Yoh5phcdFI')
+gmaps = googlemaps.Client(key='AIzaSyD9lAyN7n2M0XFm3LNgpmKD7wPou1QUsjg')
 
 # change excel file path
-wb2 = load_workbook('2010missed.xlsx')
-sht = wb2['Sheet1']
+wb2 = load_workbook('missedSince2005.xlsx')
+sht = wb2['UniqueLeft']
 # specify which column should be placed for latitude
 lat_column = 'S'
 # specify which column should be placed for longitude
 lng_column = 'T'
 # specify which column should be placed for full address
 full_addr_column = 'P'
-
 
 
 sht[lat_column + '1'] = 'lat'
@@ -44,5 +43,5 @@ while (sht['A'+str(rownum)].value != None):
 
     rownum += 1
 
-wb2.save(filename = "2010missed_added.xlsx")
+wb2.save(filename = "missedSince2005_added.xlsx")
 
